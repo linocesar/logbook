@@ -1,0 +1,61 @@
+{
+    "projeto": "OS",
+    "data_inicial": "22-05-2023",
+    "data_final": "17-07-2023",
+    "etapas": {
+        "Exploração de dados": {
+            "servicos": {
+                "Verificar a proveniencia dos dados": {
+                    "atividades": ["Documentação"]
+                },
+                "Mapear os dados resultantes": {
+                    "atividades": [
+                        "documentação",
+                        "Desenvolvimento de fluxos para documentação",
+                        "Desenvolver métodos para automatizar a obtenção de dados",
+                        "Testes obtenção de dados",
+                        "Renderizar dados de acordo com a modelagem feita",
+                        "Armazenar no banco de dados os dados de input",
+                        "Processar os dados de acordo com as regras negociais",
+                        "Desenvolver processos automatizados para informar por e-mail",
+                        "Desenvolver validação de dados nos inputs",
+                        "Reunião",
+                        "DM"
+                    ]
+                },
+                "Modelar a estrutura de dados": {
+                    "atividades": [
+                        "Documentação",
+                        "Modelagem conceitual",
+                        "Modelagem lógica",
+                        "Modelagem física",
+                        "Reunião",
+                        "DM"
+                    ]
+                }
+            }
+        },
+        "Desenvolvimento analítico": {
+            "servicos": {
+                "Identificar medidas": {
+                    "atividades": [
+                        "Documentação",
+                        "Criar processos capazes de descrever propriedades da amostragem",
+                        "Desenvolver métodos visuais para descrever propriedades",
+                        "Reunião",
+                        "DM"
+                    ]
+                },
+                "Utilizar métodos visuais": {
+                    "atividades": [
+                        "Documentação",
+                        "Identificar nos dados suas relações",
+                        "Aplicar método de plotagem",
+                        "DM",
+                        "Reunião"
+                    ]
+                }
+            }
+        }
+    }
+}
