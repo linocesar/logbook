@@ -19,8 +19,8 @@ def generate_dataset(json_data):
 
         for etapa, servicos in random.sample(etapas.items(), len(etapas)):
             for servico, atividades in random.sample(servicos['servicos'].items(), len(servicos['servicos'])):
-                if servico == 'Verificar a proveniencia dos dados' and verificar_proveniencia:
-                    continue
+                # if servico == 'Verificar a proveniencia dos dados' and verificar_proveniencia:
+                #     continue
                 
                 atividades_aleatorias = random.sample(atividades['atividades'], len(atividades['atividades']))
                 for atividade in atividades_aleatorias:
@@ -60,7 +60,7 @@ def main():
     dataset = generate_dataset(json_data)
 
     try:
-        with open('dataset122.csv', 'w', newline='') as csvfile:
+        with open('dataset.csv', 'w', newline='') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(['data', 'etapa', 'servico', 'atividade', 'tempo'])
             writer.writerows(dataset)
