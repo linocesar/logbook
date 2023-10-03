@@ -60,7 +60,8 @@ def main():
     dataset = generate_dataset(json_data)
 
     try:
-        with open('dataset.csv', 'w', newline='') as csvfile:
+        project_name = json_data.get('projeto')+'.csv'
+        with open(project_name, 'w', newline='') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(['data', 'etapa', 'servico', 'atividade', 'tempo'])
             writer.writerows(dataset)
